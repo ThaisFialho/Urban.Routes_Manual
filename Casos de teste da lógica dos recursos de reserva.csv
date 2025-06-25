@@ -1,0 +1,90 @@
+Casos de teste e teste: a lógica dos recursos de reserva,,,,,,,,
+,,,,,,,,
+ID do caso de teste,Nome do caso de teste,Pré-condições,Número da etapa,Descrição da etapa,Resultado esperado,Ambiente,Status,Link para o relatório de bug
+t-1,"Verificar a lógica da reserva ao preencher os campos De e Para
+","1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clicar no botão ""Reservar""",1,Adicionar carteira de motorista,"Uma janela com o título ""O carro foi reservado"" surgirá no centro da tela. Nela, aparecem o ícone e endereço do carro, bem como o custo da corrida e o cronômetro que exibe o tempo de espera gratuito.","Google Chrome
+800x600
+",APROVADO,
+,,,2,Adicionar um cartão bancário,,,,
+,,,3,Clicar no botão reservar,,,,
+t-2,É possivel fazer uma reserva com os endereços excluidos ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Escolher um carro ,"A reserva é confirmada e o custo é exibido como ""preço por minuto"" ao invés do custo exato da viagem","Google Chrome
+800x600
+",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-17
+,,,2,Excluir os endereços,,,,
+,,,3,Preencher campos obrigatorios ,,,,
+,,,4,Clicar no botão reservar,,,,
+t-3,"É possivel fazer o pedido inserindo carteira de motorista direto no botão ""Adicionar a carteira de motorista e reservar.""","1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar um cartão bancário,"Quando clicar em ""Adicionar a carteira de motorista e reservar."" aparece os campos para adicionar a carteira de motorista.                                                        Quando clicar no botão reservar, a janela ""Carro reservado"" será aberta","Google Chrome
+800x600
+",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-13
+,,,2,"Clicar no botão ""Inserir carteira de motorista e fazer o pedido""",,,,
+,,,3,Adicionar carteira de motorista,,,,
+,,,4,Clicar no botão reservar,,,,
+t-4,"É possivel fazer o pedido inserindo o método de pagamento direto no botão ""Adicionar o método de pagamento e reservar.""","1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista,"Quando clicar em ""Adicionar o método de pagamento e reservar."" aparece os campos para adicionar o cartão
+
+Quando você clicar no botão reservar, a janela ""Carro reservado"" será aberta","Google Chrome
+800x600
+",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-14
+,,,2,"Clicar no botão ""Adicionar o método de pagamento e pedido""",,,,
+,,,3,Adicionar um cartão bancario,,,,
+,,,4,Clicar no botão reservar,,,,
+t-5,Não é possivel reservar com todos os campos vazios ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Clicar no botão reservar,O botão deve estar inativo,"Google Chrome
+800x600",APROVADO,
+t-6,Não é possivel reservar sem adicionar uma carteira de motorista,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar um método de pagamento,"Aparece uma mensagem ""Adicionar a carteira de motorista e reservar."" e impede a reserva até que a carteira de motorista seja adicionada.","Google Chrome
+800x600",APROVADO,
+,,,2,Clicar no botão reservar,,,,
+t-7,Não é possivel reservar sem adicionar um método de pagamento,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista,"Aparece a mensagem ""Adicionar o método de pagamento e reservar."" e impede a reserva até que um cartão seja salvo.","Google Chrome
+800x600",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-14
+,,,2,Clicar no botão reservar,,,,
+t-8,Não é possivel reservar com cateira de motorista invalida ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Prencher carteira de motorista com dados invalidos ,Aparecer uma mensagem de erro e não ser possivel reservar,"Google Chrome
+800x600",APROVADO,
+,,,2,Adicionar método de pagamento,,,,
+,,,3,Clicar no botão reservar,,,,
+t-9,Não é possivel reservar com um cartão invalido,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista,Aparecer uma mensagem de erro e não ser possivel reservar,"Google Chrome
+800x600",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-18
+,,,2,Adicionar um cartão invalido,,,,
+,,,3,Clicar no botão reservar,,,,

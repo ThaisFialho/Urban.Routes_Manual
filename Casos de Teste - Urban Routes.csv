@@ -1,0 +1,36 @@
+ID,Nome do caso de teste,Pré-condição,Etapa,Descrição da etapa,Resultado esperado,Status,ID do bug
+CASO-1,Rolagem do mapa,Abra o aplicativo Urban Routes,1,Role o mapa para cima e para baixo.,O mapa se move. Todos os objetos são exibidos conforme o design.,Aprovado,
+CASO-2,Zoom no mapa,O aplicativo Urban Routes não está aberto,1,Abra o aplicativo Urban Routes,O nível de zoom muda em um valor. Todos os objetos são exibidos conforme o design.,Aprovado,
+,,,2,Clique no botão de mais (+).,,,
+CASO-3,Os títulos das áreas no mapa não são clicáveis,Abra o aplicativo Urban Routes,1,Clique no nome do local presente no mapa (exemplo: Hollywood).,Nada acontece. Os títulos das áreas não podem ser selecionados.,Aprovado,
+CASO-4,Os títulos das cidades no mapa não são clicáveis,Abra o aplicativo Urban Routes,1,Clique no nome do local presente no mapa (exemplo: West Hollywood).,Nada acontece. Os títulos da cidade não podem ser selecionados.,Aprovado,
+CASO-5,"O campo ""De"" pode ser selecionado",Abra o aplicativo Urban Routes,1,"Clique no campo ""De"".","O campo ""De"" é selecionado. O cursor pisca. O campo de pesquisa fica vazio.",Aprovado,
+CASO-6,"É possível pesquisar os objetos no campo ""Para""",Abra o aplicativo Urban Routes,1,"Clique no campo ""Para"".",A lista de estações de metrô é exibida.,Reprovado,BUG-1
+,,,2,"Digite ""Subway"".",,,
+CASO-7,"O pino de endereço aparece depois do preenchimento do campo ""De""",Abra o aplicativo Urban Routes,1,"Clique no campo ""De"".",O mapa recebe zoom no pino de endereço. A visualização corresponde à descrição do projeto.,Reprovado,BUG-2
+,,"O campo ""De"" está vazio",2,"Insira um endereço (exemplo: East 2nd Street, 601).",,,
+CASO-8,"O pino de endereço aparece depois do preenchimento do campo ""Para""",Abra o aplicativo Urban Routes,1,"Clique no campo ""Para"".",O mapa recebe zoom no pino de endereço. A visualização corresponde à descrição do projeto.,Reprovado,BUG-3
+,,"O campo ""Para"" está vazio",2,Insira um endereço (exemplo: 1300 1st St).,,,
+CASO-9,"O endereço é removido após limpar o campo ""De""","Abra o aplicativo Urban Routes. O campo ""De"" está preenchido",1,"Clique na cruz no campo ""De"".",O campo está vazio. O endereço inserido anteriormente foi removido do campo. O pino correspondente some do mapa.,Reprovado,BUG-4
+CASO-10,"O endereço é removido após limpar o campo ""Para""","Abra o aplicativo Urban Routes. O campo ""Para"" está preenchido",1,"Clique na cruz no campo ""Para"".",O campo está vazio. O endereço inserido anteriormente foi removido do campo. O pino correspondente some do mapa.,Reprovado,BUG-5
+CASO-11,Os objetos 3D são exibidos,Abra o aplicativo Urban Routes,1,Amplie com o zoom um objeto 3D várias vezes (por exemplo: Los Angeles International Airport LAX).,O objeto é mapeado como um objeto 3D.,Reprovado,BUG-6
+CASO-12,O modo de visualização em tela cheia é ativado ao clicar no botão de modo de visualização em tela cheia,Abra o aplicativo Urban Routes. O modo de visualização em tela cheia não está ativado,1,Clique no botão de modo de visualização em tela cheia.,O modo de visualização em tela cheia é ativado e as abas do navegador são ocultadas. Todos os objetos da interface do aplicativo estão no lugar. O nível de zoom não muda.,Aprovado,
+CASO-13,O modo de visualização em tela cheia é desativado ao clicar no botão de modo de visualização em tela cheia novamente,Abra o aplicativo Urban Routes. Ative o modo de visualização em tela cheia,1,Clique no botão de modo de visualização em tela cheia.,O modo de visualização em tela cheia é desativado e as abas do navegador voltam a aparecer. Todos os objetos da interface do mapa estão no lugar. O nível de zoom não muda.,Aprovado,
+CASO-14,O modo Relevo é ativado ao clicar no botão de modo Relevo,Abra o aplicativo Urban Routes,1,Aproxime o cursor do botão do modo Mapa.,O campo está preenchido. O mapa é exibido no modo Relevo e corresponde ao design.,Aprovado,
+,,,2,Aproxime o cursor do botão do modo Relevo.,,,
+,,,3,Clique no botão do modo Relevo.,,,
+CASO-15,O modo Satélite é ativado ao clicar no botão de Satélite,Abra o aplicativo Urban Routes,1,Aproxime o cursor do botão do modo Satélite.,O mapa é exibido em modo satélite. A visualização não apresenta problemas perceptíveis.,Aprovado,
+,,,2,Clique no botão Satélite.,,,
+CASO-16,Os edifícios são exibidos ao ampliá-los,Abra o aplicativo Urban Routes,1,Dê zoom em um prédio.,O prédio é exibido conforme o design.,Aprovado,
+CASO-17,As estações de metrô são exibidas ao ampliá-las,Abra o aplicativo Urban Routes,1,"Aumente o zoom em uma estação de Metrô, LA (exemplo: Downtown Long Beach Station).",O ícone do metrô é exibido.,Reprovado,BUG-7
+CASO-18,Os pontos de referência são exibidos ao ampliá-los,Abra o aplicativo Urban Routes,1,Aumente o zoom em um ponto de referência (exemplo: Los Angeles County Museum of Art).,O ícone do ponto de referência é exibido.,Aprovado,
+CASO-19,Os parques são exibidos ao ampliá-los,Abra o aplicativo Urban Routes,1,Aumente o zoom em um parque da cidade (exemplo: Vista Hermosa Natural Park).,O ícone do parque é exibido.,Aprovado,
+CASO-20,As informações de um objeto são exibidas ao clicar em um objeto,Abra o aplicativo Urban Routes,1,Clique em um lugar no mapa (exemplo: Dodger Stadium).,A exibição de informações (com informações do local) é aberta. A janela de visualização corresponde ao design.,Aprovado,
+CASO-21,As informações de um objeto são ocultadas ao clicar na cruz na janela de visualização das informações,Abra o aplicativo Urban Routes. Abra a janela de visualização das informações,1,Clique na cruz na visualização de informações.,A janela de visualização de informações é fechada. Não há artefatos no mapa.,Aprovado,
+CASO-22,O modo Street view é ativado quando o ícone correspondente é arrastado para uma rua,Abra o aplicativo Urban Routes. O modo Street View não está ativado,1,Role o mapa para a área do Estádio Dodger.,A área do Estádio Dodger foi ampliada.,Aprovado,
+,,,2,Defina o nível máximo de zoom.,O nível de zoom está no máximo.,Aprovado,
+,,,3,Clique 5 vezes no ícone de menos.,O nível de zoom muda.,Aprovado,
+,,,4,Arraste o ícone do modo Street View e coloque-o em qualquer rua.,O modo Street View é ativado.,Aprovado,
+,,,5,Role a imagem.,A imagem rola 360 graus.,Aprovado,
+CASO-23,O modo Street view é desativado ao clicar em uma seta cinza,Abra o aplicativo Urban Routes. Ative o modo Street view,1,Clique na pequena seta cinza localizada no retângulo preto (no canto superior esquerdo do mapa).,O modo Street View é desativado.,Aprovado,
+CASO-24,As informações do aplicativo são exibidas ao clicar no logotipo do aplicativo,Abra o aplicativo Urban Routes,1,Clique no logotipo do Urban Routes.,As informações sobre o aplicativo são exibidas.,Reprovado,BUG-8

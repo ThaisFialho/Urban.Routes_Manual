@@ -1,0 +1,83 @@
+"Casos de teste e teste: a lógica do botão ""Reservar""",,,,,,,,
+,,,,,,,,
+ID do caso de teste,Nome do caso de teste,Pré-condições,Número da etapa,Descrição da etapa,Resultado esperado,Ambiente,Status,Link para o relatório de bug
+t-1,"Lógica do botão de reserva ao preencher todos os campos obrigatórios do formulário de reserva
+","1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista,"Texto no botão ""Reservar""
+""A rota será de ... quilômetros e levará ... minutos""
+
+Quando você clicar no botão, a janela ""Carro reservado"" será aberta","Google Chrome
+800x600",APROVADO,
+,,,2,Adicionar um cartão bancário,,,,
+,,,3,Clicar no botão reservar,,,,
+t-2,"Lógica do botão de reserva ao preencher todos os campos obrigatórios menos a carteira de motorista 
+","1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar um cartão bancário,"Texto no botão ""Adicionar a carteira de motorista e
+reservar.""
+""A rota será de ... quilômetros e levará ... minutos""
+
+Quando você clicar no botão, a janela ""Carteira de
+motorista
+adicionada"" será aberta","Google Chrome
+800x600
+",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-13
+,,,2,"Clicar no botão ""Adicionar a carteira de motorista e
+reservar.""",,,,
+t-3,Lógica do botão de reserva ao preencher todos os campos obrigatórios menos o método de pagamento ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar a carteira de motorista,"Texto no botão ""Adicionar o método de pagamento
+e reservar.""
+""A rota será de ... quilômetros e levará ... minutos""
+
+Quando você clicar no botão, a janela ""Cartão
+adicionado"" será aberta","Google Chrome
+800x600",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-14
+,,,2,"Clicar no botão ""Adicionar o método de pagamento
+e reservar.""",,,,
+t-4,Lógica do botão de reserva ao preencher todos os campos obrigatórios e depois excluir os endereços ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista,"Texto no botão ""Adicionar endereços e reservar.""
+
+Não é possível
+clicar no botão","Google Chrome
+800x600",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-15
+,,,2,Adicionar um cartão bancário,,,,
+,,,3,Apagar os endereços ,,,,
+,,,4,"Clicar no botão ""Adicionar endereços e reservar.""",,,,
+t-5,Lógica do botão de reserva ao não preencher nenhum campo obrigatório e excluir os endereços,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Apagar os endereços ,"Texto no botão ""Adicionar a carteira de motorista e
+reservar.""
+
+Quando você clicar no botão, a janela ""Carteira de
+motorista
+adicionada"" será aberta","Google Chrome
+800x600",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-16
+,,,2,"Clicar no botão ""Adicionar a carteira de motorista e
+reservar.""",,,,
+t-6,Lógica do botão de reserva ao inserir uma carteira de motorista invalida ,"1. Acesse a mesa de teste
+2. Insira ""1917 Bay St"" no campo ""De""
+3. Insira ""615 S Broadway"" no campo ""Para""
+4. Escolha o modo ""Personal""
+5. Escolha ""Compartilhamento de carro"" como tipo de transporte
+6. Clique no botão ""Reservar""",1,Adicionar carteira de motorista invalida,O botão de reserva deve estar inativo e exibir uma mensagem de erro,"Google Chrome
+800x601",APROVADO,
+,,,2,Adicionar um cartão bancário,,,,
+,,,3,Clicar no botão reservar,,,,

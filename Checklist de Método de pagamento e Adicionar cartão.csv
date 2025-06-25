@@ -1,0 +1,35 @@
+"Checklist e resultados de teste: teste das janelas ""Método de pagamento"" e ""Adicionar cartão""",,,
+,,,
+№,Descrição da revisão,Chrome 800x600,Link para o relatório de bug
+1,"Clicar no campo ""Método de pagamento"" abre a janela ""Método de pagamento""",APROVADO,
+2,"Clicar no botão ""Adicionar cartão"" abre o formulário ""Adicionar um cartão""",APROVADO,
+3,"No campo ""Número do cartão"" deve aceitar 12 números",APROVADO,
+4,"No campo ""Código"" deve aceitar 2 números",APROVADO,
+5,"Verificar se o botão ""Adicionar"" fica ativo depois de preencher os campos corretamente",APROVADO,
+6,Ao adicionar o cartão ele deve aparecer na interface ,APROVADO,
+7,Verificar se os ultimos 4 digitos do cartão salvo são exibidos ,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-5
+8,Verificar se é possivel adicionar vários cartões ,APROVADO,
+9,Verificar se é possivel selecionar um desses cartões salvos como forma de pagamento,APROVADO,
+10,"Verificar se os espaços a cada 4 digitos no campo ""Número do cartão"" são inseridos automaticamente",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-6
+11,"Verificar se ao clicar no botão ""Cancelar"" é possivel sair da janela sem adicionar um cartão",APROVADO,
+12,"No campo ""Número do cartão""  não deve aceitar 11 números",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-7
+13,"No campo ""Número do cartão"" não deve aceitar letras ou caracteres especiais ",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-8
+14,"No campo ""Código"" não deve aceitar 1 número",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-9
+15,"No campo ""Código"" não deve aceitar letras ou caracteres especiais ",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-10
+16,"Não deve adicionar um cartão com o campo ""Número do cartão"" vazio ",APROVADO,
+17,"Não deve adicionar um cartão com o campo ""Código"" vazio ",APROVADO,
+18,Não deve adicionar um cartão com todos os campos vazios ,APROVADO,
+19,"No campo ""Número do cartão"" não deve aceitar 13 números",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-11
+20,"No campo ""Código"" não deve aceitar 3 números",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-12
+21,"No campo ""Código"" deve aceitar o numero ""01""",APROVADO,
+22,"No campo ""Código"" deve aceitar o numero ""99""",APROVADO,
+23,"No campo ""Código"" não deve aceitar o numero ""00""",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-19
+24,"No campo ""Código"" não deve aceitar o numero ""100""",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-12
+25,"No campo ""Nome"" e ""Sobrenome"" do formulario de carteira de motorista deve ser aceito somente letras latinas ",APROVADO,
+26,"No campo ""Nome"" e ""Sobrenome"" do formulario de carteira de motorista não deve ser aceito números e caracteres especiais ",APROVADO,
+27,"No campo ""Data de nascimento"" e ""Número"" do formulario de carteira de motorista deve ser aceito somente números ",APROVADO,
+28,"No campo ""Data de nascimento"" e ""Número"" do formulario de carteira de motorista não deve ser aceito letras e caracteres especiais  ",APROVADO,
+29,"No campo ""Data de nascimento"" do formulario de carteira de motorista não deve ser aceito a data ""31.02""",APROVADO,
+30,"No campo ""Data de nascimento"" do formulario de carteira de motorista deve ser aceito a data ""01.01.1880""",APROVADO,
+31,"No campo ""Data de nascimento"" do formulario de carteira de motorista deve ser aceito a data ""31.12.2006""",APROVADO,
+32,"Verificar se, na janela de Adicinionar carteira de motorista, ao clicar no botão ""Cancelar"" é possivel sair da janela sem adicionar uma carteira de motorista",REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-20

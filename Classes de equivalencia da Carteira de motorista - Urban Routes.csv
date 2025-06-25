@@ -1,0 +1,38 @@
+Grupo de verificações,Nome da classe,Limites,Dados de teste dentro da classe (conteúdo do campo),Dados de teste nos limites (campo de comentários)
+Nome,Comprimento de 2 a 14 caracteres,"2,14","4 caracteres - ""Joao""",2 - Lu                                                                  14 - Maria Izabella                                           3 -   Ana                                                                       13 - Antonia Maria                                                                                            
+,Nome com menos de 2 caracteres,1,"1 Caracter - ""L""","1 - ""L"""
+,Nome com mais de 14 caracteres ,15,"16 caracteres - ""Constante Junior""",15 - Aaaaaa aaaaaaaa
+,Nome com letras latinas ,,"""Lucas""",
+,Nome com letras não latinas ,,Михаил,
+,Nome com um espaço,,"""Joao Pedro""",
+,Nome com um hifen ,,"""Ana-Clara""",
+,Campo vazio,,Vazio,
+,Nome com caracteres especiais,,"""Ana/Clara""",
+,Nome com apenas numeros ,,"""4892374873""",
+,Nome com numero ,,"""Lucas01""",
+,Nome com apenas simbolos,,"""☾☀☁ ☆♥""",
+,,,,
+Sobrenome,Comprimento de 2 a 14 caracteres,"2,14","12 caracteres - ""Silva Santos""",2 - Ll                                                                  14 - Bbbba Cccccccc                                           3 -   Aaa                                                                       13 - Ddddddd ddddd           
+,Sobrenome com menos de 2 caracteres,1,"""S""",1 - S
+,Sobrenome com mais de 14 caracteres ,15,"19 caracteres - ""Pereira De Carvalho""",15 - Bbbba Cc Cccccc
+,Sobrenome com letras latinas ,,"""Oliveira""",
+,Sobrenome com letras não latinas ,,"""Иванов""",
+,Sobrenome com um espaço,,"""Costa Silva""",
+,Sobrenome com um hifen ,,"""Costa-Silva""",
+,Campo vazio,,Vazio,
+,Sobrenome com caracteres especiais,,"""Costa/Silva""",
+,Sobrenome com numero ,,"""Oliveira7""",
+,Sobrenome com apenas numeros ,,"""4892374873""",
+,Nome com apenas simbolos,,"""☾☀☁ ☆♥""",
+,,,,
+Data de nascimento,Data no formato dd.mm.aaaa ,,"""16.02.2003""",Válida
+,Data com ponto,,"""16.02.2003""",31.12.1879                                                   01.01.1880                                         02.01.1880                                                    Mês com 31 dias:                                   30.mm.aaaa                                         31.mm.aaaa                                                                                32.mm.aaaa                                                                                                                                           Mês com 30 dias:                                      29.mm.aaaa                                      30.mm.aaaa                                         31.mm.aaaa                                          Fevereiro de ano bissexto:                28.mm.aaaa                                      29.mm.aaaa                                       30.mm.aaaa                                        Fevereiro de ano não bissexto:             27.mm.aaaa                                          28.mm.aaaa                                                                           29.mm.aaaa                                                         .                                                                                                  d.mm.aaaa                                       ddd.mm.aaaa                                                     
+,Data com números ,,"""16.02.2003""",
+,dia valido,"1,31","""16.02.2003""",
+,mês valido,"1,12","""16.02.2003""",
+,ano valido,"1880, 2006","""16.02.2003""",
+,Data com letras ,,"""dd.mm.aaaa""",
+,Data com caracteres especiais ,,"""16/02/2003""",
+,Campo vazio ,,Vazio,
+,Data com espaço,,"""16  .  02.   2001""",
+,Data com letras não latinas,,"""Ми.ха.ил""",

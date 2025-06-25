@@ -1,0 +1,30 @@
+Checklist e resultados de teste: teste de layout,,,,
+,,,,
+№,Descrição da revisão,Chrome 800x600,Firefox,Link para o relatório de bug
+1,Verificar se os campos de endereço estão funcionando corretamente,APROVADO,APROVADO,
+2,"Verificar se o tipo de transporte ""Carsharing"" está disponivel. ",APROVADO,APROVADO,
+3,"Verificar se as três tarifas estão disponiveis: ""Casual"", ""Camping"" e ""Luxury""",APROVADO,APROVADO,
+4,"Escolher a opção ""Luxury"" e verificar se a opção está destacada ",APROVADO,APROVADO,
+5,"Verificar se o campo ""Carteira de motorista"" está vazio ",APROVADO,APROVADO,
+6,"Verificar se o campo ""Método de pagamento"" está vazio ",APROVADO,APROVADO,
+7,Verificar se o mapa está na parte central da interface ,APROVADO,APROVADO,
+8,"Verificar se ao selecionar a opção ""Luxury"" aparece a marca em cima do ícone corretamente.",APROVADO,APROVADO,
+9,"Verificar se ao selecionar a opção ""Luxury"" aparece o cabeçalho em cima do ícone corretamente.",APROVADO,APROVADO,
+10,"Verificar se ao selecionar a opção ""Luxury"" aparece a legenda em cima do ícone corretamente.",REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-1
+11,"Verificar se ao selecionar a opção ""Luxury"" aparece as caracteristicas embaixo do ícone corretamente.",REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-21
+12,"Verificar se o botão ""Reservar"" aparece embaixo dos ""requisitos do pedido""",APROVADO,APROVADO,
+13,"Verificar se o botão ""Reservar"" aparece inativo até os campos serem preenchidos",APROVADO,APROVADO,
+14,"Verificar se depois de reservar aparece a mensagem ""Carro reservado"" em pop up ",APROVADO,APROVADO,
+15,"Verificar se nesse pop up mostra informações como marca, placa, custo e tempo de espera",REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-2
+16,Verificar se tem a opção de cancelar a reserva ,APROVADO,APROVADO,
+17,Verificar se aparece uma confirmação de cancelamento da reserva,REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-3
+18,"Verificar se aparece a mensagem ""Viagem cancelada"" depois do cancelamento",REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-4
+19,Verificar se os textos estão com ortografia correta,APROVADO,APROVADO,
+20,Verificar se as mensagens de erros estão sendo exibidas corretamente ,APROVADO,APROVADO,
+21,Verificar se os placeholders e rótulos dos campos estão certinhos ,APROVADO,APROVADO,
+22,Verificar se as caixas de seleção estão funcionando corretamente ,APROVADO,APROVADO,
+23,"Verificar se todas as opções dos ""Requisitos do pedido"" estão disponiveis ",APROVADO,APROVADO,
+24,"Verificar se ao alternar o foco, o mapa mantém a escala ",APROVADO,APROVADO,
+25,Verificar se na troca do tipo de tarifa o respectivo carro é exibido ,APROVADO,APROVADO,
+26,Verificar se ao clicar em um icone de carro no mapa faz ele aumentar de tamanho e exibir as informações detalhadas ,REPROVADO,REPROVADO,https://bug-sprint3.atlassian.net/browse/PS-22
+27,Verificar se no botão reserva aparece a distancia e o tempo de viagem de acordo com a tarifa escolhida,APROVADO,APROVADO,
