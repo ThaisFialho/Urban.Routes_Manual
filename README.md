@@ -30,6 +30,19 @@ Ao final do projeto, foram:
 
 ---
 
+## 📌 Funcionalidades Testadas
+
+- Cadastro e validação de dados pessoais (nome, sobrenome, data de nascimento e carteira de motorista)
+- Processo de reserva de viagem utilizando o botão “Reservar”
+- Método de pagamento e adição de cartão
+- Lógica dos recursos de reserva e compartilhamento de corrida
+- Validação de campos obrigatórios, classes de equivalência e valores-limite
+- Layout e responsividade da interface em diferentes resoluções
+- Fluxo de confirmação e cancelamento de viagens
+- Exibição e precisão das informações de tempo e custo da rota
+
+---
+
 ## 🛠️ Ferramentas Utilizadas
 
 - Google Chrome e Mozilla Firefox (navegadores para execução dos testes)  
@@ -51,6 +64,17 @@ Durante a execução deste projeto, desenvolvi e aprimorei as seguintes habilida
 - Pensamento crítico para identificar inconsistências entre requisitos, layout e comportamento do sistema  
 - Familiarização com cenários negativos e positivos no design de testes  
 - Aplicação de conceitos de testes em múltiplos ambientes e resoluções
+
+---
+
+## 📚 Principais Aprendizados
+
+- Importância de alinhar casos de teste com requisitos antes da execução
+- Como priorizar defeitos com base no impacto para o usuário
+- Diferença prática entre testes positivos, negativos e exploratórios
+- Uso de ferramentas visuais (Figma) para validar interfaces
+- Como adaptar casos de teste para diferentes contextos de execução (navegador, resolução, ambiente)
+- Boas práticas na documentação para facilitar a comunicação com desenvolvedores
 
 ---
 
